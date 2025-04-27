@@ -1,6 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog
-
+import os
 from player import Ui_MainWindow as PlayerUI
 
 
@@ -30,7 +30,7 @@ class LoginWindow(QtWidgets.QMainWindow):
 
 
         self.pushButton = QtWidgets.QPushButton("Sign in", self)
-        self.pushButton.setGeometry(QtCore.QRect(360, 360, 250, 100))
+        self.pushButton.setGeometry(QtCore.QRect(350, 300, 150, 50))
         self.pushButton.setStyleSheet("background-color: #563C5C; color: white; font-size: 24px;")
         self.pushButton.clicked.connect(self.login)
 
@@ -52,7 +52,6 @@ class LoginWindow(QtWidgets.QMainWindow):
 
     def select_folder(self):
         folder_path = QFileDialog.getExistingDirectory(self, "Вибрати папку")
-
 
 
 if __name__ == "__main__":
