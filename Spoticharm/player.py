@@ -48,11 +48,11 @@ class Ui_MainWindow(object):
         self.pushButton_6.setStyleSheet("background-color: \"grey\";\n"
 "color: \"white\";")
         self.pushButton_6.setObjectName("pushButton_6")
-        self.listView = QtWidgets.QListView(self.centralwidget)
-        self.listView.setGeometry(QtCore.QRect(220, 50, 351, 291))
-        self.listView.setStyleSheet("background-color:\"#563C5C\";\n"
+        self.listWidget = QtWidgets.QListWidget(self.centralwidget)
+        self.listWidget.setGeometry(QtCore.QRect(220, 50, 351, 291))
+        self.listWidget.setStyleSheet("background-color:\"#563C5C\";\n"
 "color:\"white\";")
-        self.listView.setObjectName("listView")
+        self.listWidget.setObjectName("listWidget")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
